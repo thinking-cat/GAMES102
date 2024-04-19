@@ -185,7 +185,7 @@
 
  但是你可能想说，不对啊，如果按照Beizier曲线的方法，开始画的时间应该是 $t=0$ 的时候，为什么B样条从 $t_k=k$ 的时候开始画了，这有问题！是的，这真的有问题，因此就有了Open Uniform Bspline（没找到中文翻译），这个B样条是这样定义结点向量（也就是时间**段**）的:  
 
-  $$T=\( \underbrace{0,0,\cdots,0}_{k个结点},0,1,2,\cdots,n,\underbrace{n,n,\cdots,n}_{k个结点} \)$$  
+ $$T=( \underbrace{0,0,\cdots,0}_{k},0,1,2,\cdots,n,\underbrace{n,n,\cdots,n}_{k} )$$  
 
 
 那么这样就真的完完整整的把B样条框在了 $t\in[0,n]$ 中了。当然一般来讲对于t会把他定义在 $t\in[0,1]$ 上，因此再回看这个递归式子（**de Boor-cox算法**）
