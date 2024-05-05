@@ -18,7 +18,10 @@ $$f^{(eucl)}(t)=\sum_{i=0}^{n}{\boldsymbol{p_i}\frac{{B_i(t)\omega_i}}{\sum_{i=0
 
 $$f(t)=\begin{pmatrix}1 & t & \cdots & t^n & 1\end{pmatrix}\begin{pmatrix}B_0(t) & \cdots & B_n(t) & \Omega \end{pmatrix}\begin{pmatrix}p_0 \\\\ \vdots \\\\ p_n \\\\ 1\end{pmatrix}$$
 
-其中 $B_i(t)$ 都是列向量，且 $\Omega=\begin{pmatrix}0 \\\\ \vdots \\\\ 0 \\\\ 1 \end{pmatrix}$ ，中间的矩阵组成了曲线的基矩阵。
+其中 $B_i(t)$ 都是列向量，且有
+$$\Omega=\begin{pmatrix}0 \\\\ \vdots \\\\ 0 \\\\ 1 \end{pmatrix}$$
+
+中间的矩阵组成了曲线的基矩阵。
 
 而用齐次坐标表示的点最后都要经历齐次除法，几何上的解释就是齐次坐标实际上是一条曲线在高维上的表示，在经历齐次除法后，就是将原先高维的曲线在它本来所在的维度沿齐次坐标所在轴进行了等比缩放，而后在齐次坐标平面进行投影的结果，因此即便有理Beizier曲线在高维依旧无法表示圆弧，但是经过投影过后的曲线却是可以的。
 
@@ -31,7 +34,7 @@ NURBS曲线全称是Non-Uniform Rational B-Spline curves，也就是非均匀有
 
 NURBS曲线的表达式为：
 
-$$f(t)=\sum_{i=0}^{n}{\boldsymbol{p_i}\frac{{N_i(t)\omega_i}}{\sum_{i=0}^{n}{N_i(t)\omega_i}}}$$
+$$f(t)=\sum_{i=0}^{n}{\boldsymbol{p_i}\frac{{N_i(t)\omega_i}}{\sum_{i=0}^{n}N_i(t)\omega_i}}$$
 
 ## 细分曲线
 除了通过直接的参数化方法拟合曲线外，还有别的绘制曲线的思路：
