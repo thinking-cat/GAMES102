@@ -8,7 +8,7 @@ $$\kappa=\frac{1}{R}$$
 
 然而想要使用Beizier曲线拟合的话，Beizier曲线的曲率可以写为：
 
-$$\kappa=\left\angle N(t),\frac{d\gamma^2 (t)}{dt^2}\right\angle$$
+$$\kappa=\langle N(t),\frac{d\gamma^2 (t)}{dt^2}\rangle$$
 
 其中 $N(t)$ 为单位曲线法线方向，显然，Beizier曲线不可能仅用3个控制点就被画出，也就是说使用Beizier曲线去近似一个圆弧，那么Beizier曲线的多项式次数一定大于2，因此曲率大小会不停变化，所以无法完美拟合圆弧，但是工程上圆弧的使用却是十分广泛的，因此就有了**有理Beizier曲线**：
 
