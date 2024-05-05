@@ -19,6 +19,7 @@ $$f^{(eucl)}(t)=\sum_{i=0}^{n}{\boldsymbol{p_i}\frac{{B_i(t)\omega_i}}{\sum_{i=0
 $$f(t)=\begin{pmatrix}1 & t & \cdots & t^n & 1\end{pmatrix}\begin{pmatrix}B_0(t) & \cdots & B_n(t) & \Omega \end{pmatrix}\begin{pmatrix}p_0 \\\\ \vdots \\\\ p_n \\\\ 1\end{pmatrix}$$
 
 其中 $B_i(t)$ 都是列向量，且有
+
 $$\Omega=\begin{pmatrix}0 \\\\ \vdots \\\\ 0 \\\\ 1 \end{pmatrix}$$
 
 中间的矩阵组成了曲线的基矩阵。
